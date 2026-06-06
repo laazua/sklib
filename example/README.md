@@ -1,5 +1,6 @@
 ### 使用示例
 
+<pre>
 example/
 ├── Makefile              # 构建和测试
 ├── echo_server.c         # 多线程并发回显服务
@@ -41,3 +42,4 @@ make test-c
 
 === Results: 10 passed, 0 failed ===
 10 个线程同时连接服务端，分别发送 echo 和 add 请求，全部正确返回。服务端日志中可以看到并发的 [connect]/[request]/[disconnect] 交错输出，验证了多线程并发处理能力。
+</pre>
